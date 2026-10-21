@@ -77,8 +77,10 @@ git clone https://github.com/mileslynn03/amazon-product-toolkit.git
 
 ## 项目协作
 
+[Contributors · 完整贡献者名单](CONTRIBUTORS.md)
+
 - **作者与项目主导：[mileslynn03](https://github.com/mileslynn03)** — 提出需求、确定产品方向、进行真实场景测试与验收。
-- **AI 开发协作：OpenAI Codex** — 协助代码实现、界面设计、问题排查、测试、文档和启动脚本编写。
+- **AI 开发协作：[OpenAI Codex (@codex)](https://github.com/codex)** — 协助代码实现、界面设计、问题排查、测试、文档和启动脚本编写。
 
 ## 开发与验证
 

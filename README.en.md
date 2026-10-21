@@ -77,8 +77,10 @@ Complete instructions, launcher options and troubleshooting: [English guide](doc
 
 ## Project collaboration
 
+[Contributors · Full contributor list](CONTRIBUTORS.md)
+
 - **Author and project lead: [mileslynn03](https://github.com/mileslynn03)** — Requirements, product direction, real-world testing and acceptance.
-- **AI development collaboration: OpenAI Codex** — Assistance with implementation, interface design, debugging, tests, documentation and launch scripts.
+- **AI development collaboration: [OpenAI Codex (@codex)](https://github.com/codex)** — Assistance with implementation, interface design, debugging, tests, documentation and launch scripts.
 
 ## Development and verification
 
