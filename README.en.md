@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | **English**
 
-By [mileslynn03](https://github.com/mileslynn03) · [User guide](docs/USER_GUIDE.en.md) · [GitHub](https://github.com/mileslynn03/amazon-product-toolkit)
+By [mileslynn03](https://github.com/mileslynn03) · [User guide](docs/USER_GUIDE.en.md) · [GitHub](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT License](LICENSE)
 
 A local toolkit for Amazon product research. The current **Review Collection** module collects reviews by product, market and rating, optionally filters the review's stated region, translates titles and bodies with an LLM, and exports originals, translations and task details to Excel. It runs on your computer without deploying a cloud service.
 
@@ -74,6 +74,12 @@ Complete instructions, launcher options and troubleshooting: [English guide](doc
 - A retry reads from page one and merges without duplicates. It preserves existing results but does not resume at an exact page.
 - A quick scan, review cap or missing next-page link does not establish complete Amazon review coverage. Authentication, restrictions and markup changes are reported as errors.
 - Twenty markets are configured; live collection has not been validated on every market. Use reasonable request rates and follow site rules.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE), Copyright (c) 2026 mileslynn03. Commercial use, modification, copying and redistribution are permitted, including use in proprietary projects. Copies or substantial portions of the software must retain the copyright and permission notices. The software is provided "AS IS", without warranty; see LICENSE for the complete terms.
+
+The license covers the code, documentation and original assets provided by the project's author in this repository. Third-party dependencies and browser components retain their own licenses. Collected Amazon reviews, product images and other third-party content, as well as related trademarks, are not relicensed under this project's MIT License. Use of third-party services remains subject to their applicable terms.
 
 ## Project collaboration
 

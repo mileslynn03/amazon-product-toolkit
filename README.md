@@ -2,7 +2,7 @@
 
 **简体中文** | [English](README.en.md)
 
-作者：[mileslynn03](https://github.com/mileslynn03) · [完整教程](docs/USER_GUIDE.zh-CN.md) · [项目仓库](https://github.com/mileslynn03/amazon-product-toolkit)
+作者：[mileslynn03](https://github.com/mileslynn03) · [完整教程](docs/USER_GUIDE.zh-CN.md) · [项目仓库](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT 许可证](LICENSE)
 
 面向亚马逊商品研究的本地工具箱。当前提供**评论采集**模块：按商品、市场和星级获取评论，筛选评价来源地区，可选调用 LLM 翻译，并将原文、译文和任务说明导出到 Excel。通过本机浏览器操作，无需部署云服务。
 
@@ -74,6 +74,12 @@ git clone https://github.com/mileslynn03/amazon-product-toolkit.git
 - 重试从第一页重新读取并合并去重，保留已有结果；不提供精确页码续传。
 - 快速扫描、达到上限或没有下一页入口均不保证取得全部评论。站点可能要求认证、限流或变更页面，程序会明确记录失败原因。
 - 20 个站点有配置，尚未逐站完成真实采集验收。请合理控制访问频率并遵守站点规则。
+
+## 开源许可证
+
+本项目采用 [MIT 许可证](LICENSE)，Copyright (c) 2026 mileslynn03。允许商业使用、修改、复制和再分发，包括用于闭源项目；分发软件副本或实质性部分时，须保留版权声明和许可声明。软件按“原样”提供，不作任何担保，完整条款以 LICENSE 为准。
+
+许可证适用于本仓库中由项目作者提供的代码、文档和自有素材。第三方依赖及浏览器组件保留各自的许可证；采集到的亚马逊评论、商品图片等第三方内容，以及相关商标，不因本项目的 MIT 许可而获得再授权。使用第三方服务还须遵守其适用条款。
 
 ## 项目协作
 
