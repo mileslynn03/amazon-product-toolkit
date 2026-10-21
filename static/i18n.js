@@ -1,6 +1,8 @@
 /* Interface translations only. Source reviews and protocol values are preserved. */
 const EN = {
   "作者":"Author",
+  "AI 开发协作":"AI development collaboration",
+  "项目需求、方向与实际使用验证由作者主导，AI 协助代码实现、界面设计、问题排查、测试和文档编写。":"The author leads product requirements, direction and real-world validation. AI assists with implementation, interface design, debugging, testing and documentation.",
   "关于项目":"About this project",
   "接口协议": "API protocol",
   "OpenAI 兼容（Chat Completions）": "OpenAI-compatible (Chat Completions)",

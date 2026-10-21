@@ -75,6 +75,11 @@ Complete instructions, launcher options and troubleshooting: [English guide](doc
 - A quick scan, review cap or missing next-page link does not establish complete Amazon review coverage. Authentication, restrictions and markup changes are reported as errors.
 - Twenty markets are configured; live collection has not been validated on every market. Use reasonable request rates and follow site rules.
 
+## Project collaboration
+
+- **Author and project lead: [mileslynn03](https://github.com/mileslynn03)** — Requirements, product direction, real-world testing and acceptance.
+- **AI development collaboration: OpenAI Codex** — Assistance with implementation, interface design, debugging, tests, documentation and launch scripts.
+
 ## Development and verification
 
 See [development notes](docs/DEVELOPMENT.md) for manual setup, source layout and tests. Windows / macOS setup and regression checks run in [GitHub Actions](https://github.com/mileslynn03/amazon-product-toolkit/actions); consult the checks for the relevant commit.

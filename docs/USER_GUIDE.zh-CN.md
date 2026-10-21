@@ -4,6 +4,8 @@
 
 作者：[mileslynn03](https://github.com/mileslynn03)
 
+AI 开发协作：OpenAI Codex
+
 ## 使用流程
 
 1. 输入 10 位 ASIN，例如 `B0G92M6VFM`，支持换行、空格或逗号分隔；用复选框选择一个或多个国家站点。

@@ -4,6 +4,8 @@
 
 By [mileslynn03](https://github.com/mileslynn03)
 
+AI development collaboration: OpenAI Codex
+
 ## Start and stop
 
 Install 64-bit Python first; 3.11 / 3.12 is recommended. Fully extract the project into a writable folder. See the [environment table](../README.en.md#environment).

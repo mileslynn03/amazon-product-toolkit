@@ -75,6 +75,11 @@ git clone https://github.com/mileslynn03/amazon-product-toolkit.git
 - 快速扫描、达到上限或没有下一页入口均不保证取得全部评论。站点可能要求认证、限流或变更页面，程序会明确记录失败原因。
 - 20 个站点有配置，尚未逐站完成真实采集验收。请合理控制访问频率并遵守站点规则。
 
+## 项目协作
+
+- **作者与项目主导：[mileslynn03](https://github.com/mileslynn03)** — 提出需求、确定产品方向、进行真实场景测试与验收。
+- **AI 开发协作：OpenAI Codex** — 协助代码实现、界面设计、问题排查、测试、文档和启动脚本编写。
+
 ## 开发与验证
 
 手动安装、源码说明及测试命令见[开发说明](docs/DEVELOPMENT.md)。Windows / macOS 一键环境准备与回归测试在 [GitHub Actions](https://github.com/mileslynn03/amazon-product-toolkit/actions) 中运行，具体结果以对应提交的检查为准。
