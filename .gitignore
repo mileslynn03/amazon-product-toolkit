@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 本地配置、密钥与助手配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.claude/
+.codex/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# 运行时数据与登录态（含敏感 cookie，勿提交）
+storage/
+data/
+
+# 导出文件
+*.xlsx
+*.log
+*.zip
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
