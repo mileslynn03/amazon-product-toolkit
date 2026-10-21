@@ -27,6 +27,7 @@ from exporter import build_excel
 from task_manager import manager
 from results import combination_key, task_key, product_key
 from capture import STOP_REASONS
+from launcher import APP_ID, project_id
 from translation import TranslationSettings, TranslationError, translate_batch, translate_results
 
 BROWSER_WORKER = ThreadPoolExecutor(max_workers=1, thread_name_prefix="amazon-browser")
@@ -161,6 +162,11 @@ async def index():
 async def api_init():
     return {"marketplaces": list(MARKETPLACES.values()),
             "star_filters": list(STAR_FILTERS), "sessions": session_states(),"stop_reasons":STOP_REASONS}
+
+
+@app.get("/api/health")
+async def api_health():
+    return {"app":APP_ID,"status":"ok","project_id":project_id()}
 
 
 @app.get("/api/status")
