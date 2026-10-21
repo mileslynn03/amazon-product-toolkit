@@ -5,7 +5,7 @@ toolkit_python=""
 if [ -x ".venv/bin/python" ]; then
     toolkit_python=".venv/bin/python"
 else
-    for candidate in /opt/homebrew/bin/python3 /usr/local/bin/python3 python3.12 python3.11 python3; do
+    for candidate in python3 python3.12 python3.11 /usr/local/bin/python3 /opt/homebrew/bin/python3; do
         command -v "$candidate" >/dev/null 2>&1 || continue
         if "$candidate" -c 'import sys,struct;sys.exit(0 if sys.version_info >= (3,10) and struct.calcsize("P") == 8 else 1)' >/dev/null 2>&1; then
             toolkit_python="$candidate"

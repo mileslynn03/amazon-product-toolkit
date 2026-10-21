@@ -3,15 +3,17 @@ setlocal
 chcp 65001 >nul
 cd /d "%~dp0"
 if exist ".venv\Scripts\python.exe" goto local_python
+where python >nul 2>nul
+if errorlevel 1 goto try_py
+python -c "import sys,struct;sys.exit(0 if sys.version_info >= (3,10) and struct.calcsize('P') == 8 else 1)" >nul 2>nul
+if not errorlevel 1 goto path_python
+:try_py
 where py >nul 2>nul
-if errorlevel 1 goto try_python
+if errorlevel 1 goto missing_python
 py -3 -c "import sys,struct;sys.exit(0 if sys.version_info >= (3,10) and struct.calcsize('P') == 8 else 1)" >nul 2>nul
 if not errorlevel 1 goto py_launcher
-:try_python
-where python >nul 2>nul
-if errorlevel 1 goto missing_python
-python -c "import sys,struct;sys.exit(0 if sys.version_info >= (3,10) and struct.calcsize('P') == 8 else 1)" >nul 2>nul
-if errorlevel 1 goto missing_python
+goto missing_python
+:path_python
 python "%~dp0launcher.py" %*
 goto finished
 :local_python
