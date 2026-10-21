@@ -57,4 +57,4 @@ The GitHub Actions matrix prepares a fresh environment using each OS wrapper, ch
 
 The installation marker is `.venv/.toolkit-setup.json`; it records the requirements fingerprint and Python version. It is written only after dependency imports and the matching Chromium executable are available. A changed requirements file or missing browser triggers setup; normal launches do not perform unconditional package upgrades.
 
-Historical local repair/audit notes remain in `REPAIR_NOTES.md`, `PROJECT_REVIEW.md` and `COMPARISON_AMAZON_REVIEW_DOWNLOADER.md`. They describe their original dates and are not a current compatibility matrix.
+See [current verification status](VERIFICATION.en.md) / [当前验收状态](VERIFICATION.md) for dated evidence and its limits. Previous audits, repair notes and source comparisons are preserved in the [history archive](history/README.md). Those documents describe their original stages and are not a current compatibility matrix.

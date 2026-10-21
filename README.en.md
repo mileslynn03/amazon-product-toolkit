@@ -8,6 +8,8 @@ A local toolkit for Amazon product research. The current **Review Collection** m
 
 Dedicated product-information and keyword-based product collection are planned. The current title, brand and product-image lookup is supporting metadata, rather than a complete product / SKU collection module.
 
+**[Current verification status](docs/VERIFICATION.en.md)** separates live collection evidence, historical data recovery and automated checks. Previous audits and repair notes are indexed in the [history archive](docs/history/README.md).
+
 ## Features
 
 | Feature | What it does |

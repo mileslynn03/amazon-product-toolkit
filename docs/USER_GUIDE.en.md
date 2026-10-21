@@ -2,6 +2,8 @@
 
 [简体中文](USER_GUIDE.zh-CN.md) | **English** · [Project overview](../README.en.md)
 
+See [current verification status](VERIFICATION.en.md) for live collection evidence, recovery checks and automated test scope.
+
 By [mileslynn03](https://github.com/mileslynn03)
 
 AI development collaboration: OpenAI Codex
