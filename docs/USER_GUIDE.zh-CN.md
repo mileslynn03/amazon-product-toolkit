@@ -1,6 +1,6 @@
 # 使用教程 · Amazon Product Toolkit
 
-[简体中文](USER_GUIDE.zh-CN.md) | [English](USER_GUIDE.en.md) · [返回项目首页](../README.md)
+[简体中文](USER_GUIDE.zh-CN.md) | [English](USER_GUIDE.en.md) · [返回项目首页](../README.zh-CN.md)
 
 作者：[mileslynn03](https://github.com/mileslynn03)
 
@@ -75,7 +75,7 @@ API Key 只在当前页面和请求执行期间的内存中使用，不写入浏
 
 ## 一键启动与退出
 
-先按[首页的运行环境说明](../README.md#运行环境)安装 Python，并将项目完整解压到有写入权限的目录。Windows 双击 `start_windows.bat`；macOS 双击 `start_macos.command`。首次可选择终端提示语言：输入 `1` 为中文、`2` 为英语，回车默认中文。网页语言在顶部独立选择，评论译文的目标语言在 LLM 设置中独立选择。
+先按[首页的运行环境说明](../README.zh-CN.md#运行环境)安装 Python，并将项目完整解压到有写入权限的目录。Windows 双击 `start_windows.bat`；macOS 双击 `start_macos.command`。首次可选择终端提示语言：输入 `1` 为中文、`2` 为英语，回车默认中文。网页语言在顶部独立选择，评论译文的目标语言在 LLM 设置中独立选择。
 
 启动器会创建 `.venv`，安装 Python 依赖与 Playwright Chromium，等待本地服务就绪后打开页面。首次安装需要联网，耗时取决于下载速度；日后复用环境，依赖文件变化或 Chromium 缺失时再安装。不会自动安装系统 Python，不需要 Node.js、Docker 或数据库。
 

@@ -1,6 +1,6 @@
 # Contributors · 项目贡献者
 
-[简体中文介绍](README.md) · [English overview](README.en.md)
+[English overview](README.md) · [简体中文介绍](README.zh-CN.md)
 
 ## 中文
 

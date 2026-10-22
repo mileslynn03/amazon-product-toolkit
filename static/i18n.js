@@ -82,6 +82,8 @@ const EN = {
   "亚马逊商品工具箱": "Amazon Product Toolkit",
   "商品工具箱": "Product Toolkit",
   "评论采集": "REVIEW COLLECTION",
+  "Amazon Review 深度抓取工具": "Amazon Review Scraper GUI",
+  "登录后深度翻页，按星级采集，并导出原文与译文对照。": "Paginate reviews after sign-in, collect by rating, and export originals alongside translations.",
   "抓取评论、筛选反馈，并以原文与译文对照阅读。": "Collect reviews, filter feedback and read originals alongside translations.",
   "导出评论数据": "Export review data",
   "采集概览": "Collection overview",
@@ -377,7 +379,7 @@ function t(source, values={}) {
 
 function translateDOM() {
   document.documentElement.lang = language === 'en' ? 'en' : 'zh-CN';
-  document.title = language === 'en' ? 'Amazon Product Toolkit · Review Collection' : '亚马逊商品工具箱 · 评论采集';
+  document.title = language === 'en' ? 'Amazon Review Scraper GUI · Amazon Product Toolkit' : 'Amazon Review 深度抓取工具 · 亚马逊商品工具箱';
   document.querySelectorAll('[data-i18n]').forEach(element => element.textContent = t(element.dataset.i18n));
   for (const [dataAttribute, attribute] of [['data-i18n-placeholder','placeholder'],['data-i18n-aria','aria-label'],['data-i18n-title','title']]) {
     document.querySelectorAll('['+dataAttribute+']').forEach(element => element.setAttribute(attribute,t(element.getAttribute(dataAttribute))));

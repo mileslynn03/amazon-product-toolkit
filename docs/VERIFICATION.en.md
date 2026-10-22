@@ -1,6 +1,6 @@
 # Current verification status
 
-[简体中文](VERIFICATION.md) · **English** · [Project overview](../README.en.md) · [History archive](history/README.md)
+[简体中文](VERIFICATION.md) · **English** · [Project overview](../README.md) · [History archive](history/README.md)
 
 Reviewed on 2026-10-21 (Asia/Shanghai). Code and CI baseline: [ca13320](https://github.com/mileslynn03/amazon-product-toolkit/commit/ca133201c7a58fde366e11ffeb9149179611c5df). This update changes documentation only; it does not run live Amazon collection or paid LLM requests.
 

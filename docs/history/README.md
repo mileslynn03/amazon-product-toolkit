@@ -1,6 +1,6 @@
 # 历史文档 / History archive
 
-[当前验收状态](../VERIFICATION.md) · [Current verification status](../VERIFICATION.en.md) · [项目介绍](../../README.md)
+[当前验收状态](../VERIFICATION.md) · [Current verification status](../VERIFICATION.en.md) · [项目介绍](../../README.zh-CN.md)
 
 这里保留历次检查、修复和对比时的原始记录。文档中的结论、计数、品牌和本地路径对应当时版本；当前能力与验证范围统一从验收页进入。
 

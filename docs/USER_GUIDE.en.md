@@ -1,6 +1,6 @@
 # User guide · Amazon Product Toolkit
 
-[简体中文](USER_GUIDE.zh-CN.md) | **English** · [Project overview](../README.en.md)
+[简体中文](USER_GUIDE.zh-CN.md) | **English** · [Project overview](../README.md)
 
 See [current verification status](VERIFICATION.en.md) for live collection evidence, recovery checks and automated test scope.
 
@@ -10,7 +10,7 @@ AI development collaboration: OpenAI Codex
 
 ## Start and stop
 
-Install 64-bit Python first; 3.11 / 3.12 is recommended. Fully extract the project into a writable folder. See the [environment table](../README.en.md#environment).
+Install 64-bit Python first; 3.11 / 3.12 is recommended. Fully extract the project into a writable folder. See the [environment table](../README.md#environment).
 
 Double-click `start_windows.bat` on Windows or `start_macos.command` on macOS. Choose `1` for Chinese terminal messages or `2` for English; Enter defaults to Chinese. This terminal choice is separate from the interface language in the top bar and the LLM target language.
 

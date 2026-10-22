@@ -1,6 +1,6 @@
 # Development / 开发说明
 
-[中文介绍](../README.md) · [English overview](../README.en.md)
+[English overview](../README.md) · [中文介绍](../README.zh-CN.md)
 
 The user launchers require only Python's standard library before setup. They install project dependencies inside `.venv`, without changing global packages. `launcher.py` shares environment preparation and service identification across both operating systems. It does not download/install system Python or delete existing virtual environments, results or sessions.
 
@@ -58,3 +58,5 @@ The GitHub Actions matrix prepares a fresh environment using each OS wrapper, ch
 The installation marker is `.venv/.toolkit-setup.json`; it records the requirements fingerprint and Python version. It is written only after dependency imports and the matching Chromium executable are available. A changed requirements file or missing browser triggers setup; normal launches do not perform unconditional package upgrades.
 
 See [current verification status](VERIFICATION.en.md) / [当前验收状态](VERIFICATION.md) for dated evidence and its limits. Previous audits, repair notes and source comparisons are preserved in the [history archive](history/README.md). Those documents describe their original stages and are not a current compatibility matrix.
+
+`README.md` is the default English overview; `README.zh-CN.md` is the Chinese version. `README.en.md` keeps the previous English URL as a pointer. The intended GitHub About description and topics are recorded in [repository metadata](../.github/repository-metadata.json); maintainers apply them through GitHub's repository settings or API. This file contains no credentials and does not automatically change repository settings.

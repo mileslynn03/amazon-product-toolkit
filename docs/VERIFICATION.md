@@ -1,6 +1,6 @@
 # 当前验收与验证状态
 
-**简体中文** · [English](VERIFICATION.en.md) · [项目介绍](../README.md) · [历史文档](history/README.md)
+**简体中文** · [English](VERIFICATION.en.md) · [项目介绍](../README.zh-CN.md) · [历史文档](history/README.md)
 
 整理日期：2026-10-21（Asia/Shanghai）。代码与 CI 基线：[ca13320](https://github.com/mileslynn03/amazon-product-toolkit/commit/ca133201c7a58fde366e11ffeb9149179611c5df)。本次整理仅调整文档，未重新采集亚马逊评论或调用付费 LLM。
 
