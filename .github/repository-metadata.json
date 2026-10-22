@@ -1,7 +1,9 @@
 {
-  "description": "Amazon review scraper with a local web UI: authenticated pagination, batch ASINs, market/rating filters, region filtering, optional LLM translation and Excel export. 亚马逊评论深度抓取、批量采集与原译文导出工具。",
+  "description": "Amazon Review Scraper GUI: a local web UI for authenticated review pagination, batch ASINs, market/rating filters, region filtering, optional LLM translation and Excel export. 亚马逊评论深度抓取、批量采集与原译文导出工具。",
   "topics": [
     "amazon-review-scraper",
+    "amazon-review-scraper-gui",
+    "gui",
     "amazon-reviews",
     "amazon-scraper",
     "web-scraping",
