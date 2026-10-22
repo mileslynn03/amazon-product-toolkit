@@ -4,6 +4,19 @@
 
 整理日期：2026-10-21（Asia/Shanghai）。代码与 CI 基线：[ca13320](https://github.com/mileslynn03/amazon-product-toolkit/commit/ca133201c7a58fde366e11ffeb9149179611c5df)。本次整理仅调整文档，未重新采集亚马逊评论或调用付费 LLM。
 
+## 评论子项目结构验收（2026-10-22）
+
+[Amazon Review Scraper GUI](../projects/amazon-review-scraper/README.zh-CN.md) 现为仓库内可独立运行的子项目，源码、界面、测试、双语教程、启动脚本与 MIT 许可证均在其目录内。以下为本地 Windows / Python 3.11 验证；本节没有重新访问亚马逊或调用真实 LLM。后文保留基础功能的原验收日期与固定 CI 证据。
+
+| 检查 | 结果与证据范围 |
+| --- | --- |
+| 原有回归 | 123 项通过，使用迁移后的唯一源码与测试集 |
+| 新增边界检查 | 3 项通过：嵌套依赖变更使环境指纹失效、源码 ZIP 排除私有数据并脱离工具箱启动、旧工具箱入口保留原数据与会话路径 |
+| 独立源码包 | `python projects/amazon-review-scraper/build_release.py --output-dir dist` 可生成带版本 ZIP、SHA-256 校验及包内文件清单；解压后的服务、首页与静态资源检查通过 |
+| 隐私与数据保留 | 打包白名单排除 `data/`、`storage/`、`.venv/`、`.env` 和日志；原有本地数据及会话 JSON 的 SHA-256 与迁移前一致 |
+
+新增源码版本标识为 `0.1.0`，是子项目的首次源码包版本，不表示新建了独立仓库或已经发布 GitHub Release。Windows / macOS 的后续检查以对应提交的 [Actions](https://github.com/mileslynn03/amazon-product-toolkit/actions) 为准。
+
 ## 当前结论
 
 评论采集模块已实现快速扫描、登录后深度翻页、多市场与星级组合、地区筛选、逐页保存、失败重试、LLM 翻译与 Excel 导出。维护者已在实际使用中反馈深度采集及 LLM 翻译可用；现有记录的可核查范围如下。

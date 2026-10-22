@@ -9,6 +9,8 @@ env/
 .mypy_cache/
 .coverage
 htmlcov/
+dist/
+build/
 
 # 本地配置、密钥与助手配置
 .env

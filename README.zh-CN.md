@@ -2,13 +2,15 @@
 
 **简体中文** | [English](README.md)
 
-作者：[mileslynn03](https://github.com/mileslynn03) · [完整教程](docs/USER_GUIDE.zh-CN.md) · [项目仓库](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT 许可证](LICENSE)
+作者：[mileslynn03](https://github.com/mileslynn03) · [完整教程](projects/amazon-review-scraper/docs/USER_GUIDE.zh-CN.md) · [项目仓库](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT 许可证](LICENSE)
 
 ## Amazon Review Scraper GUI · 亚马逊评论深度抓取与翻译工具
 
 **带本地可视化界面的开源 Amazon 评论抓取工具，支持登录后深度翻页、批量 ASIN 与 Excel 导出。** 使用自己的亚马逊账号完成认证，按市场和星级逐页采集评论，可选调用 LLM 翻译，并将原文、译文和任务说明导出到 Excel。
 
-这是 **Amazon Product Toolkit · 亚马逊商品工具箱** 当前提供的评论模块，支持中英文界面。快速扫描读取详情页样本；深度抓取沿可访问的评论列表翻页。每个商品 × 市场 × 星级组合可独立限制条数，任务完成不代表已取得商品全部评论。
+这是 Amazon Product Toolkit 中**[可独立运行的评论抓取子项目](projects/amazon-review-scraper/README.zh-CN.md)**，拥有自己的实现、启动脚本、测试、教程与源码打包工具。可完整复制子项目目录或使用专属源码 ZIP 单独运行；工具箱根目录的原启动入口继续兼容，沿用原有结果和会话路径。
+
+快速扫描读取详情页样本；深度抓取沿可访问的评论列表翻页。每个商品 × 市场 × 星级组合可独立限制条数，任务完成不代表已取得商品全部评论。
 
 后续计划增加独立的商品信息采集和关键词商品采集模块；当前辅助读取商品标题、品牌、头图，不等同于完整商品 / SKU 信息采集。
 
@@ -71,7 +73,7 @@ git clone https://github.com/mileslynn03/amazon-product-toolkit.git
 5. **采集和查看：**开始后按页保存；失败或停止时保留部分结果，可重试未完成组合。
 6. **导出结果：**点击“导出 Excel”，保留评论原文、译文、地区、任务结束原因和数量统计。
 
-完整步骤、启动参数、环境修复和常见问题：[中文教程](docs/USER_GUIDE.zh-CN.md) · [English guide](docs/USER_GUIDE.en.md)。程序内顶部 **“？”** 也可随时查看教程。
+完整步骤、启动参数、环境修复和常见问题：[中文教程](projects/amazon-review-scraper/docs/USER_GUIDE.zh-CN.md) · [English guide](projects/amazon-review-scraper/docs/USER_GUIDE.en.md)。程序内顶部 **“？”** 也可随时查看教程。
 
 ## 常见问题
 

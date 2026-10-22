@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+data/
+storage/
+dist/
+.env
+.env.*
+*.log
+*.xlsx
+*.zip
+.DS_Store

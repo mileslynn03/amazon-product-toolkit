@@ -2,13 +2,15 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-By [mileslynn03](https://github.com/mileslynn03) · [User guide](docs/USER_GUIDE.en.md) · [GitHub](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT License](LICENSE)
+By [mileslynn03](https://github.com/mileslynn03) · [User guide](projects/amazon-review-scraper/docs/USER_GUIDE.en.md) · [GitHub](https://github.com/mileslynn03/amazon-product-toolkit) · [MIT License](LICENSE)
 
 ## Amazon Review Scraper GUI
 
 **An open-source Amazon review scraper with a local web UI for authenticated pagination, batch ASINs and Excel export.** Sign in to your own Amazon account, collect reviews across multiple pages by market and star rating, optionally translate them with an LLM, and export the original and translated text side by side.
 
-The review scraper is the current module of **Amazon Product Toolkit**. It runs on your computer and supports Chinese and English interfaces. Quick scan reads a product-page sample; deep collection follows the accessible review-list pagination. Each product × market × rating combination has its own optional cap. A finished task does not guarantee complete review coverage.
+The review scraper is an **[independently runnable subproject](projects/amazon-review-scraper/README.md)** of Amazon Product Toolkit, with its own implementation, launchers, tests, guides and source release builder. Copy the complete subproject directory or build its source ZIP to run it separately. The toolkit's existing root launchers remain compatible and retain their original data/session paths.
+
+Quick scan reads a product-page sample; deep collection follows the accessible review-list pagination. Each product × market × rating combination has its own optional cap. A finished task does not guarantee complete review coverage.
 
 Dedicated product-information and keyword-based product collection are planned. The current title, brand and product-image lookup is supporting metadata, rather than a complete product / SKU collection module.
 
@@ -71,7 +73,7 @@ Keep the terminal open and use **Ctrl+C** to exit. Choose the web interface lang
 5. **Collect and read:** results save after each page. Failed or stopped tasks retain partial results and can be retried.
 6. **Export:** Export Excel includes originals, translations, regions, task stop reasons and counts.
 
-Complete instructions, launcher options and troubleshooting: [English guide](docs/USER_GUIDE.en.md) · [中文教程](docs/USER_GUIDE.zh-CN.md). The in-app **“?”** button also opens a guide.
+Complete instructions, launcher options and troubleshooting: [English guide](projects/amazon-review-scraper/docs/USER_GUIDE.en.md) · [中文教程](projects/amazon-review-scraper/docs/USER_GUIDE.zh-CN.md). The in-app **“?”** button also opens a guide.
 
 ## Frequently asked questions
 

@@ -54,3 +54,5 @@ jobs:
           bash start_macos.command --lang en --check
           .venv/bin/python -m pip install -r requirements-dev.txt
           .venv/bin/python -m unittest discover -s tests -v
+      - name: Build standalone review source artifact
+        run: python projects/amazon-review-scraper/build_release.py --output-dir dist

@@ -4,6 +4,19 @@
 
 Reviewed on 2026-10-21 (Asia/Shanghai). Code and CI baseline: [ca13320](https://github.com/mileslynn03/amazon-product-toolkit/commit/ca133201c7a58fde366e11ffeb9149179611c5df). This update changes documentation only; it does not run live Amazon collection or paid LLM requests.
 
+## Review subproject boundary checks (2026-10-22)
+
+[Amazon Review Scraper GUI](../projects/amazon-review-scraper/README.md) is now an independently runnable subproject containing its implementation, UI, tests, bilingual guides, launchers and MIT text. The following checks ran locally on Windows / Python 3.11 without live Amazon access or real LLM calls. Later sections retain the original dates and fixed CI evidence for the underlying features.
+
+| Check | Result and scope |
+| --- | --- |
+| Existing regression suite | 123 checks passed against the relocated canonical source and tests |
+| New boundary checks | Three passed: nested requirement changes invalidate setup fingerprints; the private-data-free source ZIP starts without toolkit files; toolkit entry points preserve existing data/session paths |
+| Standalone source artifact | `python projects/amazon-review-scraper/build_release.py --output-dir dist` produces a versioned ZIP, SHA-256 checksum and in-archive manifest; the extracted server, home page and static assets were checked |
+| Privacy and preservation | The source allowlist excludes `data/`, `storage/`, `.venv/`, `.env` and logs; existing local data/session JSON hashes match the pre-migration baseline |
+
+`0.1.0` identifies the first subproject source package. It does not indicate a new repository or an already-published GitHub release. See the corresponding commit's [Actions](https://github.com/mileslynn03/amazon-product-toolkit/actions) for subsequent Windows/macOS checks.
+
 ## Current assessment
 
 The review module implements quick scans, authenticated deep pagination, market/rating combinations, region filtering, page checkpoints, retries, LLM translation and Excel export. The maintainer has reported successful deep collection and translation in actual use. The retained evidence has the following scope:

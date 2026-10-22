@@ -83,6 +83,7 @@ const EN = {
   "商品工具箱": "Product Toolkit",
   "评论采集": "REVIEW COLLECTION",
   "Amazon Review 深度抓取工具": "Amazon Review Scraper GUI",
+  "亚马逊评论深度抓取工具": "Amazon Review Scraper GUI",
   "登录后深度翻页，按星级采集，并导出原文与译文对照。": "Paginate reviews after sign-in, collect by rating, and export originals alongside translations.",
   "抓取评论、筛选反馈，并以原文与译文对照阅读。": "Collect reviews, filter feedback and read originals alongside translations.",
   "导出评论数据": "Export review data",

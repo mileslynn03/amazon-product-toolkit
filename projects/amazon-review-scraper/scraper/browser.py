@@ -7,8 +7,9 @@ import time
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from marketplaces import MARKETPLACES
+from _runtime import DATA_HOME
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = DATA_HOME
 STORAGE_DIR = BASE_DIR / "storage"
 STORAGE_DIR.mkdir(exist_ok=True)
 _local = threading.local()

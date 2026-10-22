@@ -1,0 +1,12 @@
+{
+  "id": "amazon-review-scraper-gui",
+  "name": "Amazon Review Scraper GUI",
+  "name_zh": "亚马逊评论深度抓取与翻译工具",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "mileslynn03",
+  "python": ">=3.10",
+  "entrypoint": "launcher.py",
+  "distribution": "source",
+  "part_of": "Amazon Product Toolkit"
+}

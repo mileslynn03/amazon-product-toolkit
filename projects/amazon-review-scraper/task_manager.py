@@ -11,6 +11,7 @@ from pathlib import Path
 from results import task_key, product_key, unique_reviews
 from translation import source_key
 from capture import COMPLETE_STATUSES, ACTIVE_STATUSES, empty_stats, merge_reviews, capture_summary
+from _runtime import DATA_HOME
 
 
 class TaskManager:
@@ -375,4 +376,4 @@ class TaskManager:
                 self.login_done.set()
 
 
-manager = TaskManager(Path(__file__).parent / "data" / "last_results.json")
+manager = TaskManager(DATA_HOME / "data" / "last_results.json")

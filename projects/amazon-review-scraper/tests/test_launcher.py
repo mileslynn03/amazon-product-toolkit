@@ -26,6 +26,17 @@ READY = {"python":[3,11,9], "bits":64, "dependencies":True, "browser":True}
 
 
 class LauncherTests(unittest.TestCase):
+    def test_nested_requirements_change_invalidates_toolkit_fingerprint(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder)
+            (root/'requirements.txt').write_text('-r review/requirements.txt\n',encoding='utf-8')
+            (root/'review').mkdir()
+            nested=root/'review'/'requirements.txt'
+            nested.write_text('fastapi>=0.110.0\n',encoding='utf-8')
+            before=launcher.requirements_hash(root)
+            nested.write_text('fastapi>=0.120.0\n',encoding='utf-8')
+            self.assertNotEqual(before,launcher.requirements_hash(root))
+
     def root(self, folder):
         root=Path(folder)/"folder with spaces 中文"
         root.mkdir()

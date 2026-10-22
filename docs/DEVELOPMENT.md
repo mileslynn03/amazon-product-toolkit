@@ -2,7 +2,7 @@
 
 [English overview](../README.md) · [中文介绍](../README.zh-CN.md)
 
-The user launchers require only Python's standard library before setup. They install project dependencies inside `.venv`, without changing global packages. `launcher.py` shares environment preparation and service identification across both operating systems. It does not download/install system Python or delete existing virtual environments, results or sessions.
+The review implementation now lives in the independently runnable [Amazon Review Scraper GUI subproject](../projects/amazon-review-scraper/README.md). Its [development guide](../projects/amazon-review-scraper/docs/DEVELOPMENT.md) describes the canonical source and tests. The toolkit root's `launcher.py` and `server.py` are compatibility entry points. `_review_project.py` delegates to the same review implementation while preserving the root's existing virtual environment, results and sessions.
 
 ## Manual installation / 手动安装
 
@@ -43,15 +43,11 @@ The GitHub Actions matrix prepares a fresh environment using each OS wrapper, ch
 | File / path | Purpose |
 | --- | --- |
 | `start_windows.bat`, `start_macos.command` | Select Python, handle double-click startup and leave installation errors visible |
-| `launcher.py` | Environment lock, dependency/browser checks, local service detection and browser opening |
-| `server.py` | Local FastAPI endpoints, SSE and worker orchestration |
-| `task_manager.py`, `capture.py` | Thread-safe task state, checkpoints, merging, retry selection and counts |
-| `scraper/browser.py`, `scraper/login.py` | Market sessions, manual verification and browser ownership |
-| `scraper/crawler.py`, `scraper/parser.py`, `scraper/origin.py` | Pagination, parsing and review-region matching |
-| `scraper/product.py`, `results.py`, `marketplaces.py` | Product metadata, deduplication and market configuration |
-| `translation.py`, `exporter.py` | LLM protocols, caching and original/translated Excel export |
-| `static/` | UI, Chinese/English messages and icons |
-| `tests/` | Offline tests and browser fixtures |
+| `launcher.py`, `server.py`, `_review_project.py` | Toolkit compatibility entry points and explicit legacy data/session paths |
+| `projects/amazon-review-scraper/` | Canonical review source, assets, standalone scripts, guides and tests |
+| `projects/amazon-review-scraper/project.json` | Review subproject name, version and source entry point |
+| `projects/amazon-review-scraper/build_release.py` | Allowlisted standalone source ZIP and checksum builder |
+| `tests/` | Toolkit integration checks and delegation to the canonical review suite |
 
 `/api/health` reports only application identity and a hash of the checkout location, without review data, credentials or local paths. The launcher reuses a service only when both identities match. A busy port is never cleared automatically.
 

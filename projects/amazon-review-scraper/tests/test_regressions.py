@@ -462,7 +462,7 @@ class BrowserTests(unittest.TestCase):
         self.assertIn('2 tasks', self.page.locator('#estimatedCount').inner_text())
         self.page.locator('#languageSelect').select_option('zh')
         self.assertIn('收起内容', self.page.locator('.expand-review').first.inner_text())
-        self.assertEqual(self.page.locator('h1').inner_text(), '亚马逊商品工具箱')
+        self.assertEqual(self.page.locator('h1').inner_text(), '亚马逊评论深度抓取工具')
 
     def test_english_protocol_payload_and_backend_messages(self):
         self.load_frontend()
@@ -522,7 +522,7 @@ class BrowserTests(unittest.TestCase):
         self.assertEqual(self.page.locator('html').get_attribute('lang'), 'en')
         self.assertEqual(self.page.evaluate("t('{count} 个 ASIN',{count:1})"), '1 ASIN')
         self.assertEqual(self.page.locator('#languageSelect').input_value(), 'en')
-        self.assertEqual(self.page.locator('h1').inner_text(), 'Amazon Product Toolkit')
+        self.assertEqual(self.page.locator('h1').inner_text(), 'Amazon Review Scraper GUI')
         self.page.evaluate("setLanguage('zh')")
         self.page.reload()
         self.assertEqual(self.page.locator('html').get_attribute('lang'), 'zh-CN')
